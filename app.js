@@ -14,7 +14,8 @@ buttons.map( button => {
                 }
                 break;            
             case '=':
-
+                results.innerText = eval(results.innerText);
+                break;
             default:
                 results.innerText += e.target.innerText;
         }
